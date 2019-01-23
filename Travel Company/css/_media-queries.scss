@@ -1,0 +1,130 @@
+$tablet: 45em;
+$mobile: 30em;
+
+@media (max-width: $mobile) {
+   .util-padding {
+      padding: 2em 0;
+   }
+
+   footer#contact {
+      form {
+         grid-template-columns: 1fr;
+         grid-template-areas: 'aName''anEmail''aMsg''aSub';
+         max-width: 100%;
+         padding: .75em;
+      }
+   }
+}
+
+@media (max-width: $tablet) {
+   section#news {
+      padding: 2em;
+
+      section {
+         grid-template-columns: 1fr;
+
+         article {
+            img {
+               min-height: 15em;
+            }
+         }
+      }
+   }
+
+   section#details {
+      section {
+         img {
+            min-height: 15em;
+         }
+      }
+
+      #articles {
+         grid-template-columns: 1fr;
+
+         article {
+            flex-flow: column nowrap;
+            padding: 2em;
+            text-align: center;
+
+            span {
+               margin: 0 auto;
+            }
+
+            .inner {
+               margin-left: 0;
+            }
+         }
+      }
+
+      footer {
+         a {
+            display: block;
+            margin-left: 0 !important;
+            margin-top: 1em;
+         }
+      }
+   }
+
+   section#intro {
+
+      padding: 2em 1em;
+
+      h1,
+      h2 {
+         font-size: 1.5rem;
+      }
+
+      p {
+         color: #fff;
+         font-size: 1rem;
+         font-weight: 300;
+      }
+   }
+
+   header#banner {
+      nav#navbar {
+         button#btn-nav_open {
+            visibility: visible;
+         }
+
+         ul {
+            visibility: hidden;
+
+            &.nav-open {
+               align-self: stretch;
+               background: rgb(0, 0, 0);
+               flex-flow: column nowrap;
+               padding: 0;
+               visibility: visible;
+
+               position: fixed;
+               top: 2.5em;
+               z-index: 10;
+               width: 100%;
+
+               li {
+
+                  margin: 1em 0;
+                  text-align: center;
+
+                  &:not(:last-child) {
+                     &::after {
+                        content: '';
+                        display: block;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+                        padding: .5em 0;
+                     }
+                  }
+
+
+                  a {
+                     color: #fff;
+                     padding: 1em 0;
+
+                  }
+               }
+            }
+         }
+      }
+   }
+}

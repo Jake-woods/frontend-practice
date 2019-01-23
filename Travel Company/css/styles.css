@@ -1,0 +1,520 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source sans pro', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+p {
+  letter-spacing: 0.125em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.util-cont {
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.util-padding {
+  padding: 4em 0;
+}
+
+.util-bg_black {
+  background: #1F232B;
+}
+
+header#banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.288)), to(rgba(51, 51, 51, 0.274))), url("../img/bg1.jpg");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.288), rgba(51, 51, 51, 0.274)), url("../img/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 45em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header#banner nav#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header#banner nav#navbar button#btn-nav_open {
+  background: rgba(0, 0, 0, 0.384);
+  border: 0.105em solid rgba(255, 255, 255, 0.363);
+  color: #fff;
+  cursor: pointer;
+  padding: .5em .75em;
+  visibility: hidden;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 10;
+}
+
+header#banner nav#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header#banner nav#navbar ul li {
+  margin: 0 1.25em;
+}
+
+header#banner nav#navbar ul li a {
+  color: #ddd;
+  font-weight: 400;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+header#banner nav#navbar ul li a:hover {
+  color: #fff;
+}
+
+header#banner section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: center;
+}
+
+header#banner section h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .225em;
+  line-height: 1.25;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header#banner section p {
+  color: #eee;
+  letter-spacing: 0.125em;
+  line-height: 1.5;
+}
+
+section#intro {
+  background: #FB4386;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#intro h1,
+section#intro h2 {
+  color: #fff;
+  margin: 1.5em 0;
+}
+
+section#intro h2,
+section#intro p {
+  letter-spacing: 0.125em;
+}
+
+section#intro h1 {
+  border: 0.0125em solid rgba(255, 255, 255, 0.295);
+  border-radius: 0.125em;
+  font-size: 3rem;
+  line-height: 1.75;
+  padding: .25em .35em;
+}
+
+section#intro h2 {
+  font-size: 2rem;
+}
+
+section#intro p {
+  color: #eee;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1.5em 0;
+}
+
+section#intro a {
+  border-radius: 0.125em;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em 1.75em;
+}
+
+section#details {
+  background: #fff;
+}
+
+section#details header {
+  text-align: center;
+}
+
+section#details header h2 {
+  color: #333;
+  font-size: 2rem;
+  letter-spacing: 0.125em;
+  margin: 1.5em 0;
+}
+
+section#details section {
+  text-align: center;
+}
+
+section#details section img {
+  display: block;
+  width: 100%;
+}
+
+section#details section h2 {
+  color: #333;
+  font-size: 1.75rem;
+  letter-spacing: 0.125em;
+}
+
+section#details section p {
+  color: #aaa;
+  font-size: 1.35rem;
+}
+
+section#details #articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 4em;
+}
+
+section#details #articles article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 3em;
+}
+
+section#details #articles article span i {
+  background: #282B34;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 2.5em;
+}
+
+section#details #articles article .inner {
+  margin-left: 1em;
+}
+
+section#details #articles article .inner h3 {
+  color: #FB4386;
+  letter-spacing: .135em;
+}
+
+section#details #articles article .inner p {
+  color: #a1a1a1;
+  line-height: 1.5;
+}
+
+section#details footer {
+  padding: 1em;
+  text-align: center;
+}
+
+section#details footer a {
+  border-radius: 0.125em;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  padding: 1em 4em;
+  text-transform: uppercase;
+}
+
+section#details footer a:nth-child(2) {
+  border: 0.075em solid rgba(51, 51, 51, 0.418);
+  color: #333;
+}
+
+section#details footer a:not(:nth-child(1)) {
+  margin-left: 2em;
+}
+
+section#news {
+  background: #F3F3F3;
+}
+
+section#news header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section#news header h2 {
+  color: #333;
+  font-size: 1.65rem;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+section#news section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.375em;
+}
+
+section#news section article {
+  text-align: center;
+}
+
+section#news section article img {
+  border: .45em solid #fff;
+  display: block;
+  width: 100%;
+}
+
+section#news section article h3 {
+  color: #FB4386;
+}
+
+section#news section article p {
+  color: #999;
+  line-height: 1.5;
+}
+
+section#news section article a {
+  background: #FB4386;
+  border-radius: 0.125em;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: .75em;
+  padding: .85em 2.5em;
+}
+
+footer#contact {
+  background: #282B34;
+  text-align: center;
+}
+
+footer#contact h2 {
+  border-bottom: 0.0155em solid rgba(255, 255, 255, 0.123);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .35em;
+  padding: .5em 0;
+  text-transform: uppercase;
+}
+
+footer#contact form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "aName anEmail" "aMsg aMsg" "aSub .";
+  grid-gap: 1em;
+  max-width: 75%;
+  margin: 2em auto;
+}
+
+footer#contact form input[type=name] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aName;
+}
+
+footer#contact form input[type=email] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: anEmail;
+}
+
+footer#contact form textarea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: aMsg;
+}
+
+footer#contact form input[type=submit] {
+  background: none;
+  border: .0125em solid #fff;
+  cursor: pointer;
+  color: #fff;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: aSub;
+}
+
+footer#contact form input,
+footer#contact form textarea {
+  background: #ccc;
+  border: 0;
+  border-radius: 0.125em;
+  color: #333;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1em;
+  width: 100%;
+}
+
+footer#privacy {
+  background: #282B34;
+  text-align: center;
+}
+
+footer#privacy p {
+  color: #ccc;
+  line-height: 2;
+}
+
+footer#privacy p a {
+  color: #FB4386;
+}
+
+@media (max-width: 30em) {
+  .util-padding {
+    padding: 2em 0;
+  }
+  footer#contact form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "aName" "anEmail" "aMsg" "aSub";
+    max-width: 100%;
+    padding: .75em;
+  }
+}
+
+@media (max-width: 45em) {
+  section#news {
+    padding: 2em;
+  }
+  section#news section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section#news section article img {
+    min-height: 15em;
+  }
+  section#details section img {
+    min-height: 15em;
+  }
+  section#details #articles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  section#details #articles article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 2em;
+    text-align: center;
+  }
+  section#details #articles article span {
+    margin: 0 auto;
+  }
+  section#details #articles article .inner {
+    margin-left: 0;
+  }
+  section#details footer a {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 1em;
+  }
+  section#intro {
+    padding: 2em 1em;
+  }
+  section#intro h1,
+  section#intro h2 {
+    font-size: 1.5rem;
+  }
+  section#intro p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  header#banner nav#navbar button#btn-nav_open {
+    visibility: visible;
+  }
+  header#banner nav#navbar ul {
+    visibility: hidden;
+  }
+  header#banner nav#navbar ul.nav-open {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    background: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding: 0;
+    visibility: visible;
+    position: fixed;
+    top: 2.5em;
+    z-index: 10;
+    width: 100%;
+  }
+  header#banner nav#navbar ul.nav-open li {
+    margin: 1em 0;
+    text-align: center;
+  }
+  header#banner nav#navbar ul.nav-open li:not(:last-child)::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    padding: .5em 0;
+  }
+  header#banner nav#navbar ul.nav-open li a {
+    color: #fff;
+    padding: 1em 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
