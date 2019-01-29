@@ -10,12 +10,169 @@
    <link rel="stylesheet" href="../normalize.css">
    <link rel="stylesheet" href="css/styles.css">
    <!-- End of styles -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous">
+   <!-- End of libraries -->
    <title>Massively Blog</title>
 </head>
 
 <body>
+   <div class="container">
 
+      <header class="banner">
+         <h1 class="banner__title">This is <br>Massively</h1>
+         <p class="banner__content">A justo, porta faucibus morbi non nibh arcu accumsan interdum at aenean col
+            Eleifend
+            sed accumsan cep cras augue dui Eleifend Aliquam pharetra.</p>
+      </header>
+      <!-- End of header.banner -->
+
+      <nav class="navigation">
+
+         <ul class="navigation__ul navigation--pages">
+            <li><a class="active" href="#">This is massively</a></li>
+            <li><a href="#">Generic page</a></li>
+            <li><a href="#">Elements reference</a></li>
+         </ul>
+         <!-- End of ul.navigation--pages -->
+
+         <ul class="navigation__ul navigation--social">
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+         </ul>
+         <!-- End of ul.navigation--social -->
+
+      </nav>
+      <!-- End of nav.navigation -->
+      <main>
+
+         <article class="featured">
+            <time class="featured__date" datetime="2017-04-25">April 25, 2017</time>
+            <h2 class="featured__title"><a href="#">Sit ante ut mus commodo accumsan</a></h2>
+            <p class="featured__content">Aenean ornare velit lacus varius enim ullamcorper proin aliquam
+               facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
+               amet nullam sed etiam veroeros.</p>
+            <img class="featured__img" src="./img/pic01.jpg" alt="A person rolling their jeans down">
+            <a href="#" class="featured__btn btn">Full story</a>
+         </article>
+         <!-- End of article.featured -->
+
+         <section class="posts">
+            <article class="posts__article">
+               <time datetime="2017-04-24">April 24, 2017</time>
+               <h3>Sed magna <br>
+                  ipsum faucibus</h3>
+               <img src="./img/pic02.jpg" alt="Orange beetle car">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+            <article class="posts__article">
+               <time datetime="2017-04-22">April 22, 2017</time>
+               <h3>Primis eget <br>
+                  imperdiet lorem</h3>
+               <img src="./img/pic03.jpg" alt="A man crossing the road">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+            <article class="posts__article">
+               <time datetime="2017-04-18">April 18, 2017</time>
+               <h3>Ante mattis <br>
+                  interdum dolor</h3>
+               <img src="./img/pic04.jpg" alt="An old fashioned camera">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+            <article class="posts__article">
+               <time datetime="2017-04-14">April 14, 2017</time>
+               <h3>Tempus sed <br>
+                  nulla imperdiet</h3>
+               <img src="./img/pic05.jpg" alt="A small mountain">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+            <article class="posts__article">
+               <time datetime="2017-04-11">April 11, 2017</time>
+               <h3>Odio magna <br>
+                  sed consectetur</h3>
+               <img src="./img/pic06.jpg" alt="A person holding a camera">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+            <article class="posts__article">
+               <time datetime="2017-04-07">April 7, 2017</time>
+               <h3>Augue lorem <br>
+                  primis vestibulum</h3>
+               <img src="./img/pic07.jpg" alt="A jeep on a road">
+               <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                  venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+               <a class="btn" href="#">Full story</a>
+            </article>
+
+            <footer class="posts__footer">
+               <ul>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">Next</a></li>
+               </ul>
+            </footer>
+         </section>
+         <!-- End of section#posts -->
+
+         <footer class="footer">
+            <section class="footer__section footer__section--left">
+               <form>
+                  <label for="name">Name</label>
+                  <input type="text" id="name">
+                  <label for="email">Email</label>
+                  <input type="email" id="email">
+                  <label for="message">Message</label>
+                  <textarea rows="8" id="message"></textarea>
+                  <input class="submit" type="submit" value="Send message">
+               </form>
+            </section>
+            <section class="footer__section footer__section--right">
+               <section>
+                  <h3>Address</h3>
+                  <p>1234 Somewhere Road #87257
+                     Nashville, TN 00000-0000</p>
+               </section>
+               <section>
+                  <h3>Phone</h3>
+                  <p><a href="#">(000) 000-0000</a></p>
+               </section>
+               <section>
+                  <h3>Email</h3>
+                  <p><a href="#">info@untitled.tld</a></p>
+               </section>
+               <section>
+                  <h3>Social</h3>
+                  <ul>
+                     <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                     <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                  </ul>
+               </section>
+            </section>
+         </footer>
+      </main>
+      <footer class="footer__privacy">
+         <p>&copy; Untitled</p>
+      </footer>
+   </div>
+   <!-- End of div.container -->
    <script src="./js/app.js"></script>
 </body>
 
