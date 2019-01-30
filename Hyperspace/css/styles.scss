@@ -43,7 +43,7 @@ nav {
             }
 
             &::after {
-               background: linear-gradient(to right, rgb(94, 66, 166), rgb(169, 76, 147));
+               background: linear-gradient(to right, rgba(94, 66, 166, 0.322), rgba(169, 76, 147, 0.301));
                content: '';
                display: block;
                height: .125em;

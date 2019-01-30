@@ -50,8 +50,8 @@ nav ul li a:not(.active):hover {
 }
 
 nav ul li a::after {
-  background: -webkit-gradient(linear, left top, right top, from(#5e42a6), to(#a94c93));
-  background: linear-gradient(to right, #5e42a6, #a94c93);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(94, 66, 166, 0.322)), to(rgba(169, 76, 147, 0.301)));
+  background: linear-gradient(to right, rgba(94, 66, 166, 0.322), rgba(169, 76, 147, 0.301));
   content: '';
   display: block;
   height: .125em;
