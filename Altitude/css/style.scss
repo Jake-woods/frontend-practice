@@ -1,0 +1,150 @@
+// SASS
+$clrBg: #4e5266;
+$clrTeal: #4cabb1;
+$clrYellow: #fed586;
+$clrGreen: #69c7ad;
+$navWidth: 20em;
+
+* {
+   box-sizing: border-box;
+   font-family: inherit;
+}
+
+body {
+   background: $clrBg;
+   font-family: 'Raleway';
+}
+
+.util-container {
+   max-width: 66.65em;
+   margin: 0 auto;
+}
+
+.util-border-btm {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.header {
+   &__nav {
+      margin: 4em 0 2em 0;
+   }
+
+   &__list {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+   }
+
+   &__link {
+      color: #fff;
+      font-size: .90rem;
+      font-weight: 300;
+      letter-spacing: .105em;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &--grey {
+         color: #bbb;
+      }
+
+      &--hover {
+         border-radius: .125em;
+         padding: .65em 1em;
+         transition: background 300ms ease;
+
+         &:hover {
+            background: rgba(102, 102, 102, 0.616);
+         }
+      }
+   }
+
+   &__strong {
+      color: #fff;
+      font-size: 1.125rem;
+   }
+
+   &__span {
+      margin-left: .5em;
+   }
+}
+
+.nav {
+   background: $clrTeal;
+   height: 100%;
+   position: fixed;
+   right: 0;
+   top: 0;
+   transform: translateX($navWidth);
+   transition: transform 500ms ease;
+   width: $navWidth;
+
+   &--is-active {
+      transform: translateX(0);
+      visibility: visible;
+   }
+
+   &__list {
+      list-style: none;
+      overflow: hidden;
+      padding: 0 2.5em;
+   }
+
+   &__item {
+      &:first-child {
+         margin-top: 3em;
+      }
+   }
+
+   &__link {
+      color: #fff;
+      display: block;
+      font-weight: 300;
+      font-size: .95rem;
+      padding: .75em;
+      text-decoration: none;
+
+      &--featured {
+         border-radius: 3em;
+         font-size: .85rem;
+         font-weight: 600;
+         letter-spacing: .125em;
+         margin: 1em 0;
+         padding: 1em 0;
+         text-align: center;
+         text-transform: uppercase;
+         transition: background 300ms ease;
+
+         &:hover {
+            background: rgba(255, 255, 255, 0.068);
+         }
+      }
+
+      &--white {
+         border: 1px solid rgba(255, 255, 255, 0.219);
+      }
+
+      &--green {
+         background: #5ab7bd;
+         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.123);
+      }
+   }
+
+   &__btn {
+      &--close {
+         background: none;
+         border: none;
+         color: rgba(255, 255, 255, 0.548);
+         cursor: pointer;
+         padding: .5em;
+         position: absolute;
+         top: .5em;
+         transition: color 300ms ease;
+         right: 1em;
+
+         &:hover {
+            color: #fff;
+         }
+      }
+   }
+}

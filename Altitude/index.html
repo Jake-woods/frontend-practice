@@ -5,15 +5,55 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="/normalize.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,600" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous">
+   <!-- End of fonts -->
+   <link rel="stylesheet" href="/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <!-- End of styles -->
    <title>Altitude</title>
 </head>
 
 <body>
-   
+   <div class="util-container">
+      <header class="header__nav">
+         <ul class="header__list">
+            <li class="header__list-item">
+               <a href="#" class="header__link header__link--grey"><strong class="header__strong">Altitude</strong> by
+                  pixelarity</a>
+            </li>
+            <li class="header__list-item">
+               <a href="#" class="header__link header__link--hover js-open-nav">Menu<span class="header__span"><i class="fas fa-bars"></i></span></a>
+            </li>
+         </ul>
+      </header>
+      <!-- End of .header__nav -->
+   </div>
+   <!-- End of .util-container -->
+
+   <nav class="nav">
+      <button class="nav__btn nav__btn--close js-close-nav"><i class="fas fa-times"></i></button>
+      <ul class="nav__list">
+         <li class="nav__item">
+            <a href="#" class="nav__link util-border-btm">Home</a>
+         </li>
+         <li class="nav__item">
+            <a href="#" class="nav__link util-border-btm">Generic</a>
+         </li>
+         <li class="nav__item">
+            <a href="#" class="nav__link">Elements</a>
+         </li>
+         <li class="nav__item nav__item">
+            <a href="#" class="nav__link nav__link--featured nav__link--green">Sign up</a>
+         </li>
+         <li class="nav__item">
+            <a href="#" class="nav__link nav__link--featured nav__link--white">Log in</a>
+         </li>
+      </ul>
+   </nav>
+   <!-- End of .nav -->
+
    <script src="./js/app.js"></script>
 </body>
 
