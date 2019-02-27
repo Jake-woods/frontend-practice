@@ -238,3 +238,35 @@ body {
       font-size: 1.75rem;
    }
 }
+
+@media(max-width: 35em) {
+
+
+   .container {
+      width: 25em;
+   }
+
+   .services {
+      &__grid {
+         display: flex;
+         flex-flow: column nowrap;
+      }
+      &__item {
+         border: 0 !important;
+
+      }
+   }
+
+   .contact {
+      overflow: hidden;
+
+      &__form {
+         display: flex;
+         flex-flow: column nowrap;
+      }
+   }
+
+   .section-padding {
+      padding: 4em 1.25em;
+   }
+}
